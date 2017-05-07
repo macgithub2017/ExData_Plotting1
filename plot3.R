@@ -13,7 +13,7 @@ lines(df2$DtTime, as.numeric(as.character(df2$Sub_metering_1 )))
 lines(df2$DtTime, as.numeric(as.character(df2$Sub_metering_2 )), col="red")
 lines(df2$DtTime, as.numeric(as.character(df2$Sub_metering_3 )), col="blue")
 
-legend("topright", col=c("black", "blue", "red"),lwd=2,
+legend("topright", col=c("black", "blue", "red"),lwd=2.5, lty=1,
 	legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 dev.copy(png, file="plot3.png")
